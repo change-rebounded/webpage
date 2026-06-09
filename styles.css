@@ -175,6 +175,10 @@ section {
   height: auto;
 }
 
+.hero-visual-mobile {
+  display: none;
+}
+
 .copy {
   max-width: 760px;
 }
@@ -544,11 +548,22 @@ p {
     grid-row: auto;
   }
 
-  .hero-visual {
+  .hero-visual-desktop {
     width: min(100%, 520px);
     max-width: none;
     margin-top: 44px;
     justify-self: center;
+  }
+
+  .hero-layout > .hero-visual-desktop {
+    display: none;
+  }
+
+  .hero-visual-mobile {
+    display: block;
+    width: min(100%, 520px);
+    max-width: none;
+    margin: 32px auto 1.25rem;
   }
 
   .section-panel::before,
