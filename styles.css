@@ -132,6 +132,12 @@ section {
   padding: 96px 0;
 }
 
+h1[id],
+h2[id],
+.service-card[id] {
+  scroll-margin-top: 118px;
+}
+
 .hero {
   position: relative;
   min-height: 78vh;
@@ -361,6 +367,8 @@ p {
   padding: 28px;
   border: 1px solid var(--fine-line);
   background: var(--near-black);
+  display: flex;
+  flex-direction: column;
 }
 
 .service-accent {
@@ -381,6 +389,24 @@ p {
 .service-card p {
   color: var(--soft-white);
   font-size: 1rem;
+}
+
+.service-action {
+  width: fit-content;
+  margin-top: auto;
+  padding-top: 24px;
+  color: var(--white);
+  font-size: 0.98rem;
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--deep-violet);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+.service-action:hover {
+  color: var(--acid-lime);
+  text-decoration-color: var(--acid-lime);
 }
 
 .talk-section {
