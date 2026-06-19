@@ -141,9 +141,13 @@ section {
 }
 
 .section-anchor {
-  display: block;
-  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .hero {
@@ -199,6 +203,10 @@ h1,
 h2 {
   letter-spacing: 0;
   line-height: 1.05;
+}
+
+h2 {
+  position: relative;
 }
 
 h1 {
