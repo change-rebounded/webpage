@@ -10,7 +10,8 @@
   --fine-line: rgba(255, 255, 255, 0.16);
   --max-page: 1120px;
   --header-height: 106px;
-  --anchor-offset: 1rem;
+  --anchor-offset: 1.5rem;
+  --services-heading-context: 220px;
 }
 
 * {
@@ -21,6 +22,7 @@ html {
   background: var(--black);
   color-scheme: dark;
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--header-height) + var(--anchor-offset));
 }
 
 body {
@@ -137,6 +139,10 @@ section {
 
 [id] {
   scroll-margin-top: calc(var(--header-height) + var(--anchor-offset));
+}
+
+.service-card[id] {
+  scroll-margin-top: calc(var(--header-height) + var(--anchor-offset) + var(--services-heading-context));
 }
 
 .hero {
@@ -503,7 +509,8 @@ p {
 
 @media (max-width: 760px) {
   :root {
-    --header-height: 146px;
+    --header-height: 210px;
+    --services-heading-context: 250px;
   }
 
   body {
